@@ -31,6 +31,7 @@ public:
     virtual int   begin(int socket_type, int socket_port){return 0;}
     virtual void  setPort(int p){}
     virtual int   sendData(char *data){return 0;}
+    virtual int   sendData(char *data, int data_size){return 0;}
     virtual int   receiveData(){return 0;}
     virtual char* getData(){return 0;}
     virtual int   getConnection(){return 0;}
